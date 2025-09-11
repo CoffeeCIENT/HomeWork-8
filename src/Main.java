@@ -17,24 +17,24 @@ public class Main {
 
         System.out.println("Задача 3:");
         System.out.print("num - ");
-        for (int index = 2; index < num.length; index--) {
-            if (index == num.length - 3) {
+        for (int index = 2; ; index--) {
+            if (index == 0) {
                 System.out.println(num[index]);
                 break;
             }
             System.out.print(num[index] + ", ");
         }
         System.out.print("fractional num - ");
-        for (int index = 2; index < fractionalNum.length; index--) {
-            if (index == fractionalNum.length - 3) {
+        for (int index = 2; ; index--) {
+            if (index == 0) {
                 System.out.println(fractionalNum[index]);
                 break;
             }
             System.out.print(fractionalNum[index] + ", ");
         }
         System.out.print("fear presence - ");
-        for (int index = 1; index < fearPresence.length; index--) {
-            if (index == fearPresence.length - 2) {
+        for (int index = 1; ; index--) {
+            if (index == 0) {
                 System.out.println(fearPresence[index]);
                 break;
             }
@@ -53,7 +53,7 @@ public class Main {
             System.out.print(num[index] + ", ");
         }
         System.out.println("+ Проверка на уникальность работы кода:");
-        int [] chekNum = {22, 25, 33};
+        int[] chekNum = {22, 25, 33};
         for (int index = 0; index < chekNum.length; index++) {
             if (chekNum[index] % 2 != 0) {
                 chekNum[index]++;
