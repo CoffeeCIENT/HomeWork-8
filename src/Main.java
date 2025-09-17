@@ -17,52 +17,55 @@ public class Main {
 
         System.out.println("Задача 3:");
         System.out.print("num - ");
-        for (int index = 2; ; index--) {
-            if (index == 0) {
-                System.out.println(num[index]);
-                break;
+        for (int i = num.length - 1; i >= 0; i--) {
+            System.out.print(num[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            } else {
+                System.out.println();
             }
-            System.out.print(num[index] + ", ");
         }
         System.out.print("fractional num - ");
-        for (int index = 2; ; index--) {
-            if (index == 0) {
-                System.out.println(fractionalNum[index]);
-                break;
+        for (int i = fractionalNum.length - 1; i >= 0; i--) {
+            System.out.print(fractionalNum[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            } else {
+                System.out.println();
             }
-            System.out.print(fractionalNum[index] + ", ");
         }
         System.out.print("fear presence - ");
-        for (int index = 1; ; index--) {
-            if (index == 0) {
-                System.out.println(fearPresence[index]);
-                break;
+        for (int i = fearPresence.length - 1; i >= 0; i--) {
+            System.out.print(fearPresence[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            } else {
+                System.out.println();
             }
-            System.out.print(fearPresence[index] + ", ");
         }
 
         System.out.println("Задача 4:");
-        for (int index = 0; index < num.length; index++) {
-            if (num[index] % 2 != 0) {
-                num[index]++;
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] % 2 != 0) {
+                num[i]++;
             }
-            if (index == num.length - 1) {
-                System.out.println(num[index]);
+            if (i == num.length - 1) {
+                System.out.println(num[i]);
                 break;
             }
-            System.out.print(num[index] + ", ");
+            System.out.print(num[i] + ", ");
         }
         System.out.println("+ Проверка на уникальность работы кода:");
         int[] chekNum = {22, 25, 33};
-        for (int index = 0; index < chekNum.length; index++) {
-            if (chekNum[index] % 2 != 0) {
-                chekNum[index]++;
+        for (int i = 0; i < chekNum.length; i++) {
+            if (chekNum[i] % 2 != 0) {
+                chekNum[i]++;
             }
-            if (index == chekNum.length - 1) {
-                System.out.println(chekNum[index]);
+            if (i == chekNum.length - 1) {
+                System.out.println(chekNum[i]);
                 break;
             }
-            System.out.print(chekNum[index] + ", ");
+            System.out.print(chekNum[i] + ", ");
         }
     }
 }
